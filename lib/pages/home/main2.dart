@@ -165,16 +165,61 @@ class _cars_pageState extends State<cars_page> {
       transform: matrix,
       child: Stack(
         children: [
-          Container(
-            height: Dimensions.pageViewContainer,
-            margin: EdgeInsets.only(
-                right: Dimensions.width10, left: Dimensions.width10),
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(Dimensions.radius30),
-                color: Color(0xFF69c5df),
-                image: DecorationImage(
-                    fit: BoxFit.cover, image: AssetImage("images/508.jpg"))),
-          ),
+          SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+        child: Row(
+          children: [
+        Container(
+        height: Dimensions.pageViewContainer,
+        margin: EdgeInsets.only(
+            right: Dimensions.width10, left: Dimensions.width10),
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(Dimensions.radius30),
+            color: Color(0xFF69c5df),
+            image: DecorationImage(
+                fit: BoxFit.cover, image: AssetImage("images/508.jpg"))),),
+            Container(
+              height: Dimensions.pageViewContainer,
+              margin: EdgeInsets.only(
+                  right: Dimensions.width10, left: Dimensions.width10),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(Dimensions.radius30),
+                  color: Color(0xFF69c5df),
+                  image: DecorationImage(
+                      fit: BoxFit.cover, image: AssetImage("images/911.jpg"))),),
+            Container(
+              height: Dimensions.pageViewContainer,
+              margin: EdgeInsets.only(
+                  right: Dimensions.width10, left: Dimensions.width10),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(Dimensions.radius30),
+                  color: Color(0xFF69c5df),
+                  image: DecorationImage(
+                      fit: BoxFit.cover, image: AssetImage("images/m8.jpg"))),),
+            Container(
+              height: Dimensions.pageViewContainer,
+              margin: EdgeInsets.only(
+                  right: Dimensions.width10, left: Dimensions.width10),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(Dimensions.radius30),
+                  color: Color(0xFF69c5df),
+                  image: DecorationImage(
+                      fit: BoxFit.cover, image: AssetImage("images/mk5.jpg"))),),
+            Container(
+              height: Dimensions.pageViewContainer,
+              margin: EdgeInsets.only(
+                  right: Dimensions.width10, left: Dimensions.width10),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(Dimensions.radius30),
+                  color: Color(0xFF69c5df),
+                  image: DecorationImage(
+                      fit: BoxFit.cover, image: AssetImage("images/r34.jpg"))),),
+
+          ],
+      ),
+      ),
+
+
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(

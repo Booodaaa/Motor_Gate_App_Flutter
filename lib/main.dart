@@ -4,12 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/pages/cars/popular_cars.dart';
 import 'package:flutter_app/pages/cars/reco.dart';
 import 'package:flutter_app/pages/home/main2.dart';
+import 'package:flutter_app/pages/home_page.dart';
 import 'package:flutter_app/widgets/BigText.dart';
 import 'package:flutter_app/Effects/colors.dart';
 import 'package:flutter_app/widgets/dimensions.dart';
 import 'package:get/get.dart';
 import 'Effects/dimensions.dart';
 import 'widgets/like.dart';
+import 'package:flutter_app/pages/user/login.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,8 +21,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      title: "Motor Gate",
       debugShowCheckedModeBanner: false,
-      home: Reco_cars(),
+      home: Test(),
       
     );
   }
@@ -72,7 +75,7 @@ class _TestState extends State<Test> {
           ),
         ),
         Expanded(child: SingleChildScrollView(
-          child: cars_page(),
+          child: HomePage(),
         ))
       ]),
     );
